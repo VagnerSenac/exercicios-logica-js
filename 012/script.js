@@ -4,10 +4,12 @@
 
 
 //Inicio
-	let altura, peso
+function pesoIdeal(altura){
+	let  peso
 	console.log("Digite sua altura:")
 	//Leia(altura);
-    altura = 1.74
-	peso = (72.7 * altura) - 58
+    peso = (72.7 * altura) - 58
 	console.log("Seu peso ideal é:", peso)
 //Fim
+}
+pesoIdeal(1.74)

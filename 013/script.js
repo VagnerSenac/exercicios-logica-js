@@ -6,14 +6,12 @@
 //homem quanto para mulher.
 
 //Inicio
-    let sexo, altura
+function pesoIdeal(altura,sexo){ 
     console.log("Digite a altura da pessoa:")
 	//leia(altura);
-    altura = 1.74
     console.log("Qual é o sexo da pessoa: (h) Homens / (m) Mulher")
 	//Leia(sexo);
-    sexo = "m"
-	if (sexo = "m"){
+    if (sexo = "m"){
 	//Inicio Se
 	   peso = (62.1 * altura) - 44.7
        } else {
@@ -24,4 +22,6 @@
        }
 	//Fim Senão
 	console.log("O peso ideal é: ", peso)
-//Fim    	
+//Fim  
+}
+pesoIdeal(1.74, "m")  	

@@ -3,10 +3,12 @@
 //C = 5 * ((F-32) / 9).
 
 //Inicio
-	let fah, cel
+function temperatura(fah){
+	let  cel
 	console.log("Digite a temperatura em Graus Fahrenheit:")
 	//Leia(fah);
-    fah = 30
-	cel = 5 * ((fah-32) / 9);
+  	cel = 5 * ((fah-32) / 9);
 	console.log("Temperatura em graus Celsius é:", cel)
 //Fim
+}
+temperatura(25)
