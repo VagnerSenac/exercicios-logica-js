@@ -3,10 +3,9 @@
 //INICIO
 function raio(raio) {
 	let area
-	console.log("Digite o raio de um circulo:")
+	raio = parseFloat(raio)
 	//LEIA(raio);
     area = 3,14 * (raio*raio)
-	console.log("Sua área é de", area, "Cm")
+	document.querySelector("#resultado").innerHTML = "Sua área é de " + area + " Cm"
 //FIM
 }
-raio(8)

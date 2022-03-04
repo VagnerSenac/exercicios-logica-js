@@ -1,16 +1,10 @@
 function notas(nota1, nota2, nota3, nota4){
 	let  media
-	console.log("DIGITE A NOTA 1")
-	//LEIA(nota1);
-    console.log("DIGITE A NOTA 2")
-	//LEIA(nota2);
-    console.log("DIGITE A NOTA 3");
-	//LEIA(nota3);
-    console.log("DIGITE A NOTA 4");
-	//LEIA(nota4);
+	nota1 = parseFloat(nota1)
+    nota2 = parseFloat(nota2)
+	nota3 = parseFloat(nota3)
+	nota4 = parseFloat(nota4)
     media = (nota1 + nota2 + nota3 + nota4) / 4
-	console.log("Sua média é", media)
+	document.querySelector("#resultado").innerHTML = "Sua média será de " + media
 }
 //FIM
-
-notas(9, 7, 9, 4)

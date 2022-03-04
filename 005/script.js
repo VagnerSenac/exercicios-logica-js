@@ -3,10 +3,9 @@
 //INICIO
 function metros(metro){
 	let cent
-	console.log("Escreva um número em Metro")
+	metro = parseFloat(metro)
 	//LEIA(metro);
     cent = metro * 100
-	console.log("Seu valor mede", cent, "Centimetros")
+	document.querySelector("#resultado").innerHTML = "Seu valor mede " + cent + " centimetros!!"
 //FIM
 }
-metros(5)	

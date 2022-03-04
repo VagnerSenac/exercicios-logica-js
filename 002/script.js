@@ -7,10 +7,9 @@
 	//console.log("O número informado foi ", num);
 //FIM
 
-function numeroInformado(num=0){
-	console.log("DIGITE UM NÚMERO:")
-	console.log("O número informado foi ", num)
+function exibir(num = 0){
+	
+	document.querySelector("#resultado").innerHTML = "O número informado foi " + num
 }
 
 
-numeroInformado(10)

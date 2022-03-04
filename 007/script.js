@@ -3,10 +3,9 @@
 //INICIO
 function quadrado(lado){
 	let  area
-	console.log("Digite a media de uma lado do quadrado:")
+	lado = parseFloat(lado)
 	//LEIA(lado)
 	area = (lado * lado) * 2
-	console.log("O dobro da sua área é:", area)
+	document.querySelector("#resultado").innerHTML = "O dobro da sua área é: " + area
 //FIM
 }
-quadrado(8)
