@@ -18,25 +18,24 @@
 
 
 //Inicio
-function salario(salario_hora,horas_mes,ir, inss,sindicato ){
-	let  salario_bruto, valor_sindicato,  valor_inss, 	valor_ir, salario_liquido 
-	console.log("informe o seu salário por hora")
-	//Leia(salario_hora);
-    
-	console.log("Informe o número de horas trabalhadas no mês")
-	//Leia(horas_mes);
-    
-	salario_bruto = salario_hora * horas_mes
-	valor_ir = ir / 100 * salario_bruto
-	valor_inss = inss / 100 * salario_bruto
-	valor_sindicato = sindicato / 100 * salario_bruto
-	salario_liquido = salario_bruto - valor_ir - valor_inss - valor_sindicato
-
-	console.log(" + Salário Bruto : R$", salario_bruto)
-	console.log(" - IR (11%) : R$", valor_ir)
-	console.log(" - INSS (8%) : R$", valor_inss)
-	console.log(" - Sindicato (5%) : R$", valor_sindicato)
-	console.log(" = Salário Liquido : R$", salario_liquido)
-//Fim 
+//function caucularSalario(salario_hora,horas_mes,ir, inss,sindicato ){
+function calcularSalario(){
+	let  salarioBruto, sindicato,  inss, impostoRenda, salarioLiquido 
+	salarioBruto = document.querySelector("#salario_bruto").value 
+    salarioBruto = parseFloat(salarioBruto)
+	inss = salarioBruto * 8 / 100 
+	sindicato = salarioBruto * 5/100
+	impostoRenda = salarioBruto * 11/100
+	salarioLiquido = salarioBruto - inss - sindicato - impostoRenda
+	document.querySelector("#resultado").innerHTML =  "<br>"
+	document.querySelector("#resultado").innerHTML += "Salário Bruto: R$  " + salarioBruto
+	document.querySelector("#resultado").innerHTML +=  "<br>"
+	document.querySelector("#resultado").innerHTML += "INSS (8%): R$  " + inss
+	document.querySelector("#resultado").innerHTML +=  "<br>"
+	document.querySelector("#resultado").innerHTML += "Sindicato (5%): R$  " + sindicato
+	document.querySelector("#resultado").innerHTML += "<br>"
+	document.querySelector("#resultado").innerHTML += "Imposto de Renda (11%): R$  " + impostoRenda
+	document.querySelector("#resultado").innerHTML += "<br>"
+	document.querySelector("#resultado").innerHTML += "Salário Líquido: R$  " + salarioLiquido
 }
-salario(29,120, 11,8, 5)
+
