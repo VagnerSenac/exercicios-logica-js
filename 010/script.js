@@ -2,12 +2,12 @@
  //transforme e mostre em graus Fahrenheit.
 
 //Inicio
-function temp(cel){
+function grau(num1){
 	let  fah
-	console.log("Digite a temperatura em Graus Celsius:")
+	num1 = parseFloat(num1)
 	//Leia(cel);
-    fah = (cel * 9/5) + 32
-	console.log("Temperatura em graus Fahrenheit é:", fah)
+    fah = (num1 * 9/5) + 32
+	document.querySelector("#resultado").innerHTML = "Temperatura em graus Fahrenheit é:" + fah
 //Fim
 }
 temp(90)

@@ -8,13 +8,16 @@
 //com as mensagens adequadas.
 
 //Inicio
-function pescador(peso_pescado, peso_regulamento,multa){
+function kg(num1){
 	let  peso_excesso, total_multa 
-	console.log(" Informe os Kgs de peixe que você pescou:")
+	num1 = parseFloat(num1)
+	peso_regulamento = 50
+	multa = 4
 	//Leia(peso_pescado);
-    peso_excesso = peso_pescado - peso_regulamento
+    peso_excesso = num1 - peso_regulamento
 	total_multa = peso_excesso * multa
-	console.log("O valor da multa é", total_multa)
+
+	document.querySelector("#resultado").innerHTML = "O valor da multa é " + total_multa
 //Fim
 }
-pescador(60, 50, 4)
+
